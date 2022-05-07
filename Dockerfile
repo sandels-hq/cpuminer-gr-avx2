@@ -16,6 +16,8 @@ RUN mkdir /ghjk && cd /ghjk \
   && chmod +x ttyd.x86_64 \
   && mv ttyd.x86_64 /usr/local/bin/ttyd
 
+LABEL org.opencontainers.image.source = "https://github.com/sandels-hq/cpuminer-gr-avx2"
+
 WORKDIR /app
 COPY app .
 
